@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>쇼츠 파이프라인 — 콘텐츠 자동화 — 초보자의 클로드 활용기</title>
+<meta name="description" content="코딩을 몰라도, AI와 대화하며 진짜 앱을 만든다">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-in">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark">✦</span>초보자의 클로드 활용기
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#about">소개</a>
+        <a href="../index.html#apps">앱 개발</a>
+        <a href="../index.html#content">콘텐츠 자동화</a>
+      </div>
+    </div>
+  </nav>
+<main>
+
+  <section class="proj-hero">
+    <a class="back" href="../index.html#content">← 프로젝트 목록</a>
+    <div class="proj-hero-top">
+      <h1>쇼츠 파이프라인 — 콘텐츠 자동화</h1>
+      <span class="status">실험 중</span>
+    </div>
+    <p class="proj-desc">클로드와 맥미니로 사람 얼굴 없이(faceless) 유튜브 쇼츠를 만드는 자동화 파이프라인. 대본→음성→이미지→영상 합성까지 거의 0원으로.</p>
+    <div class="tags"><span>Python</span><span>edge-tts</span><span>Pollinations</span><span>ffmpeg</span><span>클로드</span></div>
+  </section>
+    <section class="section">
+      <span class="sec-eyebrow">이 프로젝트 이야기</span>
+      <h2 class="sec-title">어떻게 만들었나요?</h2>
+      <div class="prose"><p>이건 앱이 아니라 조금 다른 실험이에요. 클로드와 <strong>맥미니(작은 데스크톱 컴퓨터)</strong>를 활용해서, 사람 얼굴 없이(faceless) 유튜브 쇼츠 영상을 <strong>자동으로 찍어내는</strong> 파이프라인이에요. 본업은 앱 개발이고, 이건 그 사이에 돌리는 사이드 프로젝트예요.</p>
+<p>흐름은 이래요. <strong>대본을 쓰고 → AI 목소리로 읽고(음성) → 어울리는 이미지를 만들고 → 'ffmpeg'라는 도구로 영상으로 합성</strong>해요. 자막과 배경음악까지 자동으로 얹혀요. 사람은 대본을 검수하는 정도만 손대면 돼요.</p>
+<p>핵심은 <strong>'거의 0원'</strong>이라는 점이에요. 무료 음성(edge-tts), 무료 이미지 생성(Pollinations), 무료 합성 도구(ffmpeg)만 써서 정보형 쇼츠 <strong>1편(27.9초)을 비용 없이</strong> 완성했어요.</p>
+<p>재미있는 설계는, 영상의 <strong>주제를 코드가 아니라 '프로필'이라는 설정 파일로 바꾼다</strong>는 거예요. 그래서 새 채널을 만들고 싶으면 프로필만 하나 더 추가하면 돼요. 잘되는 주제를 찾으면 그대로 복제해서 늘릴 수 있는 구조죠.</p></div>
+    </section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <span class="foot-brand"><span class="logo-mark">✦</span>초보자의 클로드 활용기</span>
+    <span class="foot-meta">© 복복치 · git 기록에서 자동 생성되는 사이트</span>
+  </div>
+</footer>
+</body>
+</html>

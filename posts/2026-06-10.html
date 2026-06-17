@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1일차 — 앱을 '처음부터 다시' 만들기로 했다 — 초보자의 클로드 활용기</title>
+<meta name="description" content="코딩을 몰라도, AI와 대화하며 진짜 앱을 만든다">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-in">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark">✦</span>초보자의 클로드 활용기
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#about">소개</a>
+        <a href="../index.html#projects">프로젝트</a>
+        <a href="../index.html#log">개발일지</a>
+      </div>
+    </div>
+  </nav>
+<main>
+<article class="post">
+  <a class="back" href="../index.html#log">← 개발일지 목록</a>
+  <p class="post-date">2026년 6월 10일 (수)</p>
+  <h1>1일차 — 앱을 '처음부터 다시' 만들기로 했다</h1><p class="lead">이미 돌아가는 앱이 있는데도 왜 다시 만들까? 그리고 한 줄도 코딩을 모르는 상태에서 무엇부터 시작했는지에 대한 이야기.</p><p>제가 만들려는 건 <strong>음식점 예약 관리 앱</strong>이에요. 손님 예약을 받고, 테이블 자리를 배치하고, 단골 고객을 관리하는 그런 프로그램이죠. 사실 예전에 만든 버전(v1)이 실제 가게에서 돌아가고 있어요. 그런데 그 버전은 급하게 만들다 보니 구조가 엉켜 있어서, 이번엔 <strong>AI 툴의 도움을 받아 처음부터 깔끔하게 다시</strong> 만들기로 했습니다.</p><p>코딩을 잘 모르면 '뭐부터 해야 하지?'가 가장 막막한데요. 제가 한 첫 번째 일은 <strong>코드를 짜는 게 아니라 '설명서를 쓰는 것'</strong>이었어요. AI는 매번 대화를 새로 시작하면 이전 내용을 기억하지 못하거든요. 그래서 '이 앱은 무엇이고, 어떤 규칙으로 만들 거고, 뭘 조심해야 하는지'를 문서로 정리해 뒀어요. 사람으로 치면 새 직원에게 주는 인수인계서 같은 거예요.</p><p>기술적으로는 <strong>세 가지 도구</strong>를 골랐어요. 화면을 만드는 'Expo(React Native)', 데이터를 저장하는 'Supabase'(예약·고객 정보가 들어가는 창고), 그리고 실수를 미리 잡아주는 'TypeScript'. 이름이 어렵지만, 각각 '화면 / 창고 / 안전장치' 정도로 이해하면 충분해요.</p><p>마지막으로 가장 신경 쓴 건 <strong>보안</strong>이었어요. 여러 가게가 한 앱을 같이 쓰는 구조라서, A가게 사장님이 B가게 손님 정보를 절대 볼 수 없게 막아야 하거든요. 이런 '칸막이'를 데이터베이스 단에서 거는 작업(RLS)을 첫날부터 깔아 뒀습니다.</p><aside class="takeaway"><span class="tk-label">오늘의 한 줄</span>코드부터 짜지 말고, AI에게 줄 '설명서'와 '규칙'부터 만들자. 방향이 잡히면 나머지는 훨씬 수월해진다.</aside><details class="commits">
+    <summary>이날의 실제 작업 내역 (5건)</summary>
+    <ul><li><code>8afc258</code> Harden initial RLS schema and update v2 plan</li><li><code>6110d1f</code> Document v2 testing workflow: dev build from start, Android first</li><li><code>b7036be</code> Add v2-plan.md handoff doc and reference it from CLAUDE.md</li><li><code>4191674</code> Set up Supabase + TypeScript foundation for Flowit v2</li><li><code>8d8433e</code> Initial commit</li></ul></details><nav class="postnav"><a href="2026-06-12.html" class="pn pn-new"><span>다음 글</span>최신 기록 →</a><span class="pn pn-empty"></span></nav></article>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <span class="foot-brand"><span class="logo-mark">✦</span>초보자의 클로드 활용기</span>
+    <span class="foot-meta">© 복복치 · git 기록에서 자동 생성되는 사이트</span>
+  </div>
+</footer>
+</body>
+</html>
