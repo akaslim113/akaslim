@@ -85,9 +85,31 @@ main{display:block}
 
 /* project page hero */
 .proj-hero{max-width:var(--maxw); margin:0 auto; padding:48px 22px 8px}
-.proj-hero-top{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:18px 0 6px}
-.proj-hero h1{font-size:clamp(26px,4.5vw,38px); font-weight:900; letter-spacing:-.6px; margin:0}
+.proj-hero-main{display:flex; gap:22px; align-items:flex-start; margin-top:18px}
+.proj-logo{width:84px; height:84px; border-radius:20px; object-fit:cover; flex-shrink:0;
+  border:1px solid var(--line); box-shadow:var(--shadow); background:#fff}
+.proj-hero-text{flex:1; min-width:0}
+.proj-hero-top{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:0 0 6px}
+.proj-hero h1{font-size:clamp(24px,4.2vw,36px); font-weight:900; letter-spacing:-.6px; margin:0}
 .proj-desc{color:var(--soft); font-size:17px; max-width:var(--readw); margin:6px 0 16px}
+
+/* 작업 사진(figure) */
+.shot{margin:26px 0; text-align:center}
+.shot img{max-width:100%; border-radius:14px; border:1px solid var(--line); box-shadow:var(--shadow)}
+.shot figcaption{font-size:13.5px; color:var(--soft); margin-top:10px}
+.shot-empty .shot-ph{border:2px dashed var(--line-2); border-radius:14px; background:var(--tint);
+  padding:34px 20px; display:flex; flex-direction:column; align-items:center; gap:7px}
+.shot-ph-icon{font-size:26px; opacity:.75}
+.shot-ph-cap{font-size:14.5px; color:var(--ink); font-weight:700}
+.shot-ph-file{font-size:12px; color:var(--soft); font-family:ui-monospace,monospace;
+  background:#fff; border:1px solid var(--line-2); padding:3px 9px; border-radius:6px}
+
+/* 갤러리 */
+.gallery{display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:12px; margin-top:8px}
+.gcell{display:block; border-radius:12px; overflow:hidden; border:1px solid var(--line);
+  box-shadow:var(--shadow); aspect-ratio:9/16; background:var(--tint)}
+.gcell img{width:100%; height:100%; object-fit:cover; transition:.2s}
+.gcell:hover img{transform:scale(1.05)}
 
 /* sub heading inside a category */
 .sub-head{font-size:15px; font-weight:800; color:var(--soft); margin:34px 0 14px;

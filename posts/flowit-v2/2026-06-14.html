@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>4일차 — 기능을 늘리고, 처음으로 '예쁘게' — 초보자의 클로드 활용기</title>
+<title>4일차 — 기능을 늘리고, 처음으로 '좀 예쁘게' — 초보자의 클로드 활용기</title>
 <meta name="description" content="코딩을 몰라도, AI와 대화하며 진짜 앱을 만든다">
+<link rel="icon" type="image/png" href="../../images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -28,7 +29,21 @@
 <article class="post">
   <a class="back" href="../../projects/flowit-v2.html#log">← Flowit v2 개발일지</a>
   <p class="post-date">2026년 6월 14일 (일)</p>
-  <h1>4일차 — 기능을 늘리고, 처음으로 '예쁘게'</h1><p class="lead">고객 관리·설정·테이블 배치도를 추가하고, 칙칙하던 화면에 다크 테마를 입혔다.</p><p>기능이 어느 정도 갖춰지자 <strong>주변 기능들</strong>을 채웠어요. 단골 고객을 관리하는 화면(방문 이력, VIP·블랙리스트 표시, 선결제 잔액, 포인트), 가게 설정 화면, 그리고 매장 테이블이 어디에 놓여 있는지 보여주는 <strong>배치도(플로어)</strong>를 만들었어요.</p><p>이날의 또 다른 큰 변화는 <strong>디자인</strong>이었어요. 그전까지 화면은 기능만 되는 '못생긴' 상태였는데, 어두운 배경의 깔끔한 테마(다크 테마)를 전체에 입혔어요. 색을 직접 하나하나 칠하는 대신, '기본 색·강조 색·글자 색'을 미리 정해두고 그걸 가져다 쓰는 방식으로 정리했어요. 이렇게 하면 나중에 색 하나만 바꿔도 앱 전체가 한 번에 바뀌어서 편하거든요.</p><p>또 <strong>화면 크기에 따라 다르게 보이도록</strong> 했어요. 휴대폰에서는 메뉴가 접히고, 태블릿에서는 펼쳐지는 식이죠. 식당에서는 태블릿을 많이 쓰니까 꼭 필요한 작업이었어요. 중간에 화면이 무한 로딩되는 버그도 있었는데, 차근차근 원인을 찾아 고쳤습니다.</p><aside class="takeaway"><span class="tk-label">오늘의 한 줄</span>기능이 어느 정도 되면 디자인을 입힐 때다. 색·간격을 '미리 정해두고 재사용'하면 나중이 편하다.</aside><details class="commits">
+  <h1>4일차 — 기능을 늘리고, 처음으로 '좀 예쁘게'</h1><p class="lead">고객 관리에 설정에 테이블 배치도까지 채우고, 그동안 못생겼던 화면에 드디어 색을 입혔어요.</p><p>기능이 어느 정도 모양을 갖추니까, 주변에 필요한 것들을 채우게 되더라고요. 단골손님을 기록하는 화면(방문 이력, VIP·블랙리스트 표시, 선결제 잔액, 포인트), 가게 설정 화면, 그리고 우리 가게 테이블이 어디에 어떻게 놓였는지 보여주는 배치도를 만들었어요.</p><p>근데 이날 진짜 큰 변화는 디자인이었어요. 그전까지 화면은 솔직히 못생겼어요. 기능만 겨우 되는, 회색 박스 잔뜩인 상태요. 거기에 어두운 톤의 깔끔한 테마를 입혔는데, 분위기가 확 달라지니까 괜히 뿌듯하더라고요.</p><p>색을 칠하는 방식도 클로드가 알려준 대로 영리하게 했어요. 화면마다 색을 일일이 칠하는 게 아니라, '기본색·강조색·글자색'을 미리 한 군데 정해두고 다들 거기서 가져다 쓰게요. 이렇게 해두면 나중에 색 하나만 바꿔도 앱 전체가 한 번에 바뀌어요. 처음엔 왜 이렇게 번거롭게 하나 했는데, 며칠 뒤에 이게 얼마나 편한지 알았어요.</p><p>또 화면 크기에 따라 다르게 보이게도 했어요. 폰에서는 메뉴가 접히고, 태블릿에서는 쫙 펼쳐지는 식으로요. 식당에선 태블릿을 많이 쓰니까 이건 꼭 필요했어요. 중간에 화면이 빙글빙글 무한 로딩에 걸려서 한참 헤맸는데, 클로드랑 같이 원인을 하나씩 지워가며 잡았어요. 이런 날도 있는 거죠.</p><aside class="takeaway"><span class="tk-label">오늘의 한 줄</span>기능이 어느 정도 되면 그때가 꾸밀 타이밍. 색이랑 간격은 '미리 정해두고 재사용'하면 나중이 편하다.</aside>
+      <figure class="shot shot-empty">
+        <div class="shot-ph">
+          <span class="shot-ph-icon">📷</span>
+          <span class="shot-ph-cap">단골손님 기록 화면 (방문 이력·VIP·포인트).</span>
+          <span class="shot-ph-file">site/images/shots/day4-customer.png</span>
+        </div>
+      </figure>
+      <figure class="shot shot-empty">
+        <div class="shot-ph">
+          <span class="shot-ph-icon">📷</span>
+          <span class="shot-ph-cap">테이블 배치도 — 우리 가게 자리 그대로.</span>
+          <span class="shot-ph-file">site/images/shots/day4-floor.png</span>
+        </div>
+      </figure><details class="commits">
     <summary>이날의 실제 작업 내역 (9건)</summary>
     <ul><li><code>4e588fd</code> Fix infinite loading + add tablet tab bar</li><li><code>4085962</code> Responsive home: mobile menu vs tablet inline (v1 nav)</li><li><code>f515403</code> Rebuild floor: coordinate table layout, drag setup, status view (v1)</li><li><code>25e78dc</code> Reskin all screens to v1 dark theme</li><li><code>ea624dc</code> Add dark theme tokens (from v1) and reskin home/reservation list</li><li><code>4df79a0</code> Update handoff: bucket A (customers/settings/floor) done, awaiting test</li><li><code>853db2e</code> Add basic floor view (table occupancy for today)</li><li><code>fa4b372</code> Add store settings (name, confirmation time, tables)</li><li><code>dfd88d5</code> Add customer management (history, VIP/blacklist, prepaid, points)</li></ul></details><nav class="postnav"><a href="2026-06-15.html" class="pn pn-new"><span>다음 글</span>최신 기록 →</a><a href="2026-06-13.html" class="pn pn-old"><span>이전 글</span>← 지난 기록</a></nav></article>
 </main>
