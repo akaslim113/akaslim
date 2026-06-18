@@ -30,12 +30,9 @@
   <a class="back" href="../../projects/flowit-v2.html#log">← Flowit v2 개발일지</a>
   <p class="post-date">2026년 6월 13일 (토)</p>
   <h1>3일차 — 드디어 '진짜 기능'이 돌아가다</h1><p class="lead">로그인, 회원가입, 예약 추가… 이날부터 화면이 진짜 앱처럼 굴러가기 시작했어요. 솔직히 좀 신났어요.</p><p>이날부터 사람이 실제로 누르고 쓰는 기능을 만들기 시작했어요. 제일 먼저 한 건 화면과 화면 사이를 잇는 길을 까는 거였어요. 로그인 안 한 사람은 로그인 화면으로, 로그인한 사람은 예약 화면으로 알아서 보내주는 거요. 일종의 교통정리인데, 이게 깔리니까 앱이 갑자기 '앱'처럼 느껴지더라고요.</p><p>그다음은 로그인이랑 회원가입. 여기서 1일차에 적어둔 교훈이 빛을 봤어요. 같은 이메일로 계정이 두 개 생기던 그 버그요. 이번엔 '확인하고 → 만들기'를 따로따로가 아니라 한 번에 처리하게 해서 그 틈을 아예 없앴어요. 가게를 새로 만들고, 직원을 초대 코드로 부르는 것까지 이날 넣었어요.</p><p>그리고 이 앱의 심장인 예약 기능. 예약을 새로 넣고, 목록으로 보고, 상태를 바꾸고(확정·착석·완료·노쇼·취소), 한 예약에 테이블 여러 개를 붙이는 것까지요. 버튼 하나 누를 때마다 화면이 착착 반응하는 걸 보는 게 그렇게 재밌었어요.</p><p>이날 클로드가 제일 고마웠어요. '예약 목록을 날짜별로 넘겨보게 해줘' 이렇게 말로 던지면, 안에서 돌아가는 복잡한 코드는 알아서 써 주거든요. 저는 나온 결과를 보고 '이건 좋고, 저건 좀 어색하니까 이렇게 바꿔줘' 하고 고르기만 했어요. 메뉴판 보고 주문하는 느낌이었어요.</p><aside class="takeaway"><span class="tk-label">오늘의 한 줄</span>큰 기능도 '로그인 → 회원가입 → 예약'처럼 잘게 쪼개면 하나씩 끝낼 수 있다.</aside>
-      <figure class="shot shot-empty">
-        <div class="shot-ph">
-          <span class="shot-ph-icon">📷</span>
-          <span class="shot-ph-cap">날짜별로 넘겨보는 예약 목록 화면.</span>
-          <span class="shot-ph-file">site/images/shots/day3-reservation.png</span>
-        </div>
+      <figure class="shot">
+        <img src="../../images/shots/day3-reservation.png" alt="날짜별로 넘겨보는 예약 목록 화면." loading="lazy">
+        <figcaption>날짜별로 넘겨보는 예약 목록 화면.</figcaption>
       </figure><details class="commits">
     <summary>이날의 실제 작업 내역 (5건)</summary>
     <ul><li><code>86bb202</code> Update v2-plan handoff: onboarding + reservation depth done</li><li><code>11fdda9</code> Reservation depth: day view, multi-table, confirmation-pending flag</li><li><code>ffcac39</code> Add account onboarding: signup, store creation, staff invites</li><li><code>57ffa3c</code> Add reservations CRUD (list, create, status change, delete)</li><li><code>c6e4f7e</code> Add expo-router navigation and auth/multi-tenant scaffolding</li></ul></details><nav class="postnav"><a href="2026-06-14.html" class="pn pn-new"><span>다음 글</span>최신 기록 →</a><a href="2026-06-12.html" class="pn pn-old"><span>이전 글</span>← 지난 기록</a></nav></article>

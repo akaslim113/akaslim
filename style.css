@@ -104,6 +104,21 @@ main{display:block}
 .shot-ph-file{font-size:12px; color:var(--soft); font-family:ui-monospace,monospace;
   background:#fff; border:1px solid var(--line-2); padding:3px 9px; border-radius:6px}
 
+/* 만든 과정(대화) */
+.making{margin-top:34px; background:var(--panel); border:1px solid var(--line);
+  box-shadow:var(--shadow); border-radius:var(--radius); padding:24px 24px 8px}
+.making-title{margin:0 0 4px; font-size:18px; font-weight:900; letter-spacing:-.3px}
+.making-intro{margin:0 0 18px; color:var(--soft); font-size:15px}
+.convo{display:flex; flex-direction:column; gap:12px; padding-bottom:16px}
+.bubble{max-width:82%; padding:12px 16px; border-radius:16px; font-size:15.5px; line-height:1.6}
+.bubble .who{display:block; font-size:11.5px; font-weight:800; margin-bottom:4px; opacity:.85}
+.bubble.me{align-self:flex-end; background:linear-gradient(135deg,var(--clay),var(--clay-2));
+  color:#fff; border-bottom-right-radius:5px}
+.bubble.me .who{color:#ffe8de}
+.bubble.claude{align-self:flex-start; background:var(--tint); border:1px solid var(--line-2);
+  color:var(--ink); border-bottom-left-radius:5px}
+.bubble.claude .who{color:var(--clay)}
+
 /* 갤러리 */
 .gallery{display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:12px; margin-top:8px}
 .gcell{display:block; border-radius:12px; overflow:hidden; border:1px solid var(--line);
